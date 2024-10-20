@@ -41,7 +41,7 @@
 
 ## Design & Color Theme
 
-- **Primary Colors**: #16423C, #6A9C89, #C4DAD2, #E9EFEC
+- **Primary Colors**: ```#16423C```, ```#6A9C89```, ```#C4DAD2```, ```#E9EFEC```
 - **Design Layout**: Modern, responsive design with a clean interface.
 
 ## Getting Started
@@ -50,7 +50,7 @@ To start using Symptix, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/symptix.git
+   git clone https://github.com/Neerav-Gupta/Symptix.git
    ```
 2. Install the dependencies:
    ```bash
