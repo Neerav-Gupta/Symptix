@@ -41,7 +41,7 @@
 
 ## Design & Color Theme
 
-- **Primary Colors**: ```#16423C```, ```#6A9C89```, ```#C4DAD2```, ```#E9EFEC```
+- **Primary Colors**: `#16423C`, `#6A9C89`, `#C4DAD2`, `#E9EFEC`
 - **Design Layout**: Modern, responsive design with a clean interface.
 
 ## Getting Started
@@ -57,7 +57,7 @@ To start using Symptix, follow these steps:
    cd symptix
    npm install
    ```
-3. Update the API Key for AI usage and Firebase information for live forum support, which is found in `/src/lib/Chatbot/chatbot.js` and `console.log("Hello, world!");``/src/lib/API/Firbase.js`, respectively.
+3. Update the API Key for AI usage and Firebase information for live forum support, which is found in `/src/lib/Chatbot/chatbot.js` and `/src/lib/API/Firbase.js`, respectively.
 4. Run the app:
    ```bash
    npm run dev
