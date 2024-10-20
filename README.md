@@ -57,7 +57,7 @@ To start using Symptix, follow these steps:
    cd symptix
    npm install
    ```
-3. Update the API Key for AI usage and Firebase information for live forum support, which is found in `/src/lib/Chatbot/chatbot.js` and `/src/lib/API/Firbase.js`, respectively.
+3. Update the API Key for AI usage and Firebase information for live forum support, which is found in `/src/lib/Chatbot/chatbot.js` and `/src/lib/API/Firebase.js`, respectively.
 4. Run the app:
    ```bash
    npm run dev
