@@ -4,13 +4,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDQ335Za9OxuziyuJ6XS-a_4w8wW8AaV7A",
-    authDomain: "symptix.firebaseapp.com",
-    projectId: "symptix",
-    storageBucket: "symptix.appspot.com",
-    messagingSenderId: "917225201517",
-    appId: "1:917225201517:web:fc7bc7d9b6d13d47e20464",
-    measurementId: "G-9KJW06VEC1"
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_DOMAIN",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_STORAGE_BUCKET",
+    messagingSenderId: "YOUR_ID",
+    appId: "YOUR_APP_ID",
+    measurementId: "YOUR_MEASUREMENT_ID"
 };
 
 const app = initializeApp(firebaseConfig);

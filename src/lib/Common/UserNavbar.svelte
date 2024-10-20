@@ -13,6 +13,7 @@
   let name = "";
   let email = "";
   onMount(() => {
+    console.log()
     document.getElementById("profile-img").src =
       JSON.parse(localStorage.getItem("firebaseUser")).photoURL != undefined
         ? JSON.parse(localStorage.getItem("firebaseUser")).photoURL

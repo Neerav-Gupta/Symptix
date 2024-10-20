@@ -202,14 +202,14 @@
             style="display: flex; justify-content: center; margin: auto;"
             on:click={handleSearch}
             disabled
-            >&#10548;
+            ><i class="fa fa-arrow-circle-o-up" style="margin:auto;"></i>
           </button>
         {:else}
           <button
             class="search-button"
             style="display: flex; justify-content: center; margin: auto;"
             on:click={handleSearch}
-            >&#10548;
+            ><i class="fa fa-arrow-circle-o-up" style="margin:auto;"></i>
           </button>
         {/if}
         <div style="flex-basis: 100%; height: 0;"></div>
@@ -255,8 +255,8 @@
     font-family: "SUSE", sans-serif;
     font-size: 20px;
     background-color: #e9efec;
-    height: inherit;
-    width: 1000px;
+    height: 58px;
+    width: 1010px;
   }
 
   .search-button {
@@ -265,9 +265,10 @@
     background-color: #16423c;
     color: white;
     font-family: "SUSE", sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     border: none;
-    max-height: 60px;
+    height: 60px;
+    display: flex;
   }
 
   .search-button:hover {

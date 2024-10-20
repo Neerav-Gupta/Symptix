@@ -1,38 +1,64 @@
-# create-svelte
+# Symptix
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+**Symptix** is a comprehensive healthcare platform designed to assist patients in managing their health through the use of AI technology. The platform offers two core functionalities:
 
-## Creating a project
+1. **Symptom Diagnosis**: Symptix uses advanced AI models to diagnose patients based on their symptoms. By inputting symptoms into the system, users receive potential diagnoses and insights on possible medical conditions. This feature aims to help patients make informed decisions before seeking medical consultation.
 
-If you're seeing this, you've probably already done this step. Congrats!
+2. **Community Forum**: Symptix includes a forum where users can ask health-related questions, share experiences, and provide support for one another. Patients can post questions about symptoms, treatments, and conditions, with the ability to receive replies, likes, and dislikes. The forum fosters a supportive environment for shared learning.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Features
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### Symptom Diagnosis with AI
 
-## Developing
+- **User-Friendly Interface**: Enter symptoms in a search bar and receive a list of potential diagnoses.
+- **Accurate AI Predictions**: Leverages medical data to provide a probability-based diagnosis.
+- **Fast Results**: Get your potential diagnosis quickly with insights on medical conditions.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Community Forum
 
-```bash
-npm run dev
+- **Post Questions**: Ask questions related to symptoms, treatments, and health advice.
+- **Reply & Interact**: Respond to other users' questions, provide feedback, and share experiences.
+- **Likes & Dislikes**: Engage with the community through likes and dislikes on posts.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Technologies Used
 
-## Building
+- **Frontend**: Svelte
+- **Backend**: Firebase
+- **AI Models**: Gemini 1.0 Pro
+- **API Integration**: Endless Medical API for symptom analysis
 
-To create a production version of your app:
+## How it Works
 
-```bash
-npm run build
-```
+1. **Signup**: Users create an account on the platform.
+2. **Symptom Input**: Users input their symptoms in the diagnosis section.
+3. **AI Diagnosis**: The AI analyzes the symptoms and presents a list of possible diagnoses with probabilities.
+4. **Engage in Forum**: Users can participate in community discussions to gain more insights or share their own experiences.
 
-You can preview the production build with `npm run preview`.
+## Future Plans
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- **Real-Time Chat with Doctors**: Integrate a feature to chat with medical professionals.
+- **Health Tracking**: Enable users to track symptoms over time for better diagnosis.
+
+## Design & Color Theme
+
+- **Primary Colors**: #16423C, #6A9C89, #C4DAD2, #E9EFEC
+- **Design Layout**: Modern, responsive design with a clean interface.
+
+## Getting Started
+
+To start using Symptix, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/symptix.git
+   ```
+2. Install the dependencies:
+   ```bash
+   cd symptix
+   npm install
+   ```
+3. Update the API Key for AI usage and Firebase information for live forum support, which is found in `/src/lib/Chatbot/chatbot.js` and `console.log("Hello, world!");``/src/lib/API/Firbase.js`, respectively.
+4. Run the app:
+   ```bash
+   npm run dev
+   ```

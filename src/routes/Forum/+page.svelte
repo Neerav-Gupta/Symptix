@@ -13,6 +13,7 @@
   import { writable } from "svelte/store";
   import UserNavbar from "$lib/Common/UserNavbar.svelte";
   import Navbar from "$lib/Common/Navbar.svelte";
+  import Footer from "$lib/Common/Footer.svelte";
 
   let questions = writable([]);
 
@@ -30,6 +31,7 @@
         console.log(`User logged in: ${user.email}`);
       } else {
         console.log("No user logged in");
+        localStorage.removeItem("firebaseUser");
       }
     });
 
@@ -311,7 +313,31 @@
             </div>
             {#if question.replies && question.replies.length > 0}
               <div class="replies">
-                <h4>Replies:</h4>
+                <h4>
+                  <!-- svelte-ignore a11y-click-events-have-key-events -->
+                  <!-- svelte-ignore a11y-no-static-element-interactions -->
+                  <i
+                    class="arrow down"
+                    on:click={(event) => {
+                      let button = event.target;
+                      if (
+                        button.parentElement.nextElementSibling.style.display ==
+                        "none"
+                      ) {
+                        button.parentElement.nextElementSibling.style.display =
+                          "block";
+                        button.classList.remove("right");
+                        button.classList.add("down");
+                      } else {
+                        button.parentElement.nextElementSibling.style.display =
+                          "none";
+                        button.classList.remove("down");
+                        button.classList.add("right");
+                      }
+                    }}
+                  ></i>
+                  <span style="margin-left: 10px;">Replies:</span>
+                </h4>
                 <ul>
                   {#each question.replies as reply (reply.replyId)}
                     <li>
@@ -362,10 +388,11 @@
     </section>
   {/if}
 </main>
+<Footer />
 
 <style>
   main {
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     font-family: SUSE, sans-serif;
   }
 
@@ -523,5 +550,22 @@
     font-size: 15px;
     font-family: inherit;
     color: #16423c;
+  }
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 </style>
