@@ -6,6 +6,12 @@
 
 2. **Community Forum**: Symptix includes a forum where users can ask health-related questions, share experiences, and provide support for one another. Patients can post questions about symptoms, treatments, and conditions, with the ability to receive replies, likes, and dislikes. The forum fosters a supportive environment for shared learning.
 
+<br>
+
+![](./src/lib/Common/For_Doctors_Image1.png)
+![](./src/lib/Common/For_Doctors_Image2.png)
+![](./src/lib/Common/For_Doctors_Image3.png)
+
 ## Features
 
 ### Symptom Diagnosis with AI
@@ -14,11 +20,19 @@
 - **Accurate AI Predictions**: Leverages medical data to provide a probability-based diagnosis.
 - **Fast Results**: Get your potential diagnosis quickly with insights on medical conditions.
 
+<br />
+
+![](./src/lib/Common/ChatbotDisplay.png)
+
 ### Community Forum
 
 - **Post Questions**: Ask questions related to symptoms, treatments, and health advice.
 - **Reply & Interact**: Respond to other users' questions, provide feedback, and share experiences.
 - **Likes & Dislikes**: Engage with the community through likes and dislikes on posts.
+
+<br />
+
+![](./src/lib/Common/Forum.png)
 
 ## Technologies Used
 
